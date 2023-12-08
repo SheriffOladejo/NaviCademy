@@ -14,7 +14,9 @@ class Y3QuizLightsLevelViewModel: ObservableObject {
     @Published var dynamicContentViewModel = DynamicContentViewModel()
     @Published var numberOfQuestions: String = ""
     @Published var peopleAttended: String = ""
-    @Published var title: String = ""
+    @Published var questionTitle: String = ""  // Property to store the retrieved title
+    @Published var title: String = ""  // Property to store the retrieved title
+    @Published var imageName: String = ""  // Property to store the retrieved image name
     @Published var rules: [String] = []
     
     var rankType: String = "y3lights"
@@ -35,34 +37,35 @@ class Y3QuizLightsLevelViewModel: ObservableObject {
         print("Rank: \(rank)")
         print("Type: \(type)")
 
-        let query = questionCollectionReference
+        // Refactor the query to fetch the full document
+        questionCollectionReference
             .whereField("rank", arrayContains: rank)
+            .getDocuments { [unowned self] (querySnapshot, error) in
+                // Handle the query results
+                if let error = error {
+                    print("Error fetching questions: \(error)")
+                    return
+                }
+                
+                guard let querySnapshot = querySnapshot else {
+                    print("No questions found")
+                    return
+                }
 
-        print("Query: \(query)")
-
-        query.getDocuments { [unowned self] (querySnapshot, error) in
-            if let error = error {
-                print("Error fetching questions: \(error)")
-                return
-            }
-            
-            guard let querySnapshot = querySnapshot else {
-                print("No questions found")
-                return
-            }
-            
-            for document in querySnapshot.documents {
-                // Access the document data
-                if let theType = document.data()["type"] as? [String], let theLevel = document.data()["level"] as? [String] {
-                    // Check if both the "type" and "level" match the desired values
-                    if theType.contains(type), theLevel.contains(quizLevel) {
-                        // Both the "type" and "level" match, process the document
-                        print("Document ID: \(document.documentID), The-Type: \(theType), The-Level: \(theLevel)")
-                        print("Document: \(document.data())")
+                for document in querySnapshot.documents {
+                    // Access the document data including title and image
+                    if let questionTitle = document.data()["title"] as? String {
+                        // Store the retrieved title in the ViewModel
+                        self.questionTitle = questionTitle
+                        print("Quiz title: \(title)")
+                    }
+                    if let imageName = document.data()["image"] as? String {
+                        // Store the retrieved image name in the ViewModel
+                        self.imageName = imageName
+                        print("Image name: \(imageName)")
                     }
                 }
             }
-        }
         
         // Fetch number of people attended
         let quizDocumentReference = db.collection("i18n").document("dk").collection("quiz").document("y3lights").collection(quizLevel).document("info")
