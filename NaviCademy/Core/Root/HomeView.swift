@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var selectedTab = "Hjem"
+    @State private var selectedTab = "Home"
 
     var body: some View {
         ZStack {
@@ -28,7 +28,7 @@ struct HomeView: View {
                         .tabItem {
                             Label("Hjem", systemImage: "house.circle")
                         }
-                        .tag("Hjem")
+                        .tag("Home")
                     
                     LearnHomeView()
                         .tabItem {
@@ -48,19 +48,7 @@ struct HomeView: View {
                     //                        }
                     //                        .tag("Konto")
                     
-                    Y3QuizHomeView()
-                        .tabItem {
-                            Label("Mere", systemImage: "line.3.horizontal.circle")
-                        }
-                        .tag("Mere")
-                    
-                    MoreView()
-                        .tabItem {
-                            Label("Mere", systemImage: "line.3.horizontal.circle")
-                        }
-                        .tag("Mere")
-                    
-                    MoreView()
+                    Y3QuizLightsHomeView(rankType: "y3lights")
                         .tabItem {
                             Label("Mere", systemImage: "line.3.horizontal.circle")
                         }

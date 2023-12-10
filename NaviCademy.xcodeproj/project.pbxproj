@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2047210B2B2387E900C1324B /* Y3QuizLightsQuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047210A2B2387E900C1324B /* Y3QuizLightsQuestionsViewModel.swift */; };
+		2047210D2B23956000C1324B /* Y3QuizLightsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047210C2B23956000C1324B /* Y3QuizLightsOptionsViewModel.swift */; };
+		2047210F2B23A74F00C1324B /* Y3QuizLightsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047210E2B23A74F00C1324B /* Y3QuizLightsManager.swift */; };
+		204721162B23B08E00C1324B /* Y3QuizLightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204721152B23B08D00C1324B /* Y3QuizLightsModel.swift */; };
 		204C4D022B0D519E0012AF4A /* NaviCademyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C4D012B0D519E0012AF4A /* NaviCademyApp.swift */; };
 		204C4D042B0D519E0012AF4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C4D032B0D519E0012AF4A /* ContentView.swift */; };
 		204C4D062B0D519F0012AF4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204C4D052B0D519F0012AF4A /* Assets.xcassets */; };
@@ -25,20 +29,11 @@
 		209C40BB2B15343400A02158 /* Y3QuizLightsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40BA2B15343400A02158 /* Y3QuizLightsHomeView.swift */; };
 		209C40BD2B1535C000A02158 /* Y3QuizHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40BC2B1535C000A02158 /* Y3QuizHomeView.swift */; };
 		209C40C42B16370900A02158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40C32B16370900A02158 /* AppDelegate.swift */; };
-		209C40C72B163E4600A02158 /* countDocumentsInCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40C62B163E4600A02158 /* countDocumentsInCollection.swift */; };
 		209C40C92B163F6900A02158 /* QuizHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40C82B163F6900A02158 /* QuizHomeViewModel.swift */; };
 		209C40CB2B16469800A02158 /* Y3QuizLightsLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40CA2B16469800A02158 /* Y3QuizLightsLevelViewModel.swift */; };
-		209C40CD2B16728800A02158 /* DynamicContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40CC2B16728800A02158 /* DynamicContentViewModel.swift */; };
-		209C40CF2B16814000A02158 /* Y3QuizQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40CE2B16814000A02158 /* Y3QuizQuestionsView.swift */; };
-		209C40DE2B19107400A02158 /* QuizManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40DD2B19107400A02158 /* QuizManager.swift */; };
-		209C40E02B1910AA00A02158 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40DF2B1910AA00A02158 /* QuizQuestion.swift */; };
-		209C40E22B1910DB00A02158 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40E12B1910DB00A02158 /* QuizViewModel.swift */; };
-		209C40E42B1A2C5100A02158 /* QuizInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40E32B1A2C5100A02158 /* QuizInfo.swift */; };
-		209C40E62B1A606800A02158 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40E52B1A606800A02158 /* SessionManager.swift */; };
-		209C40E82B1A669900A02158 /* InsideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40E72B1A669900A02158 /* InsideView.swift */; };
-		20A2DF762B14E0BD008D2861 /* QuizOptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2DF752B14E0BD008D2861 /* QuizOptionComponent.swift */; };
-		20A2DF782B14EFD5008D2861 /* QuizOptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2DF772B14EFD5008D2861 /* QuizOptionRow.swift */; };
-		20A2DF7A2B14F020008D2861 /* QuizOptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2DF792B14F020008D2861 /* QuizOptionViewModel.swift */; };
+		209C40CF2B16814000A02158 /* Y3QuizLightsQuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C40CE2B16814000A02158 /* Y3QuizLightsQuestionsView.swift */; };
+		20A2DF762B14E0BD008D2861 /* Y3QuizLightsOptionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2DF752B14E0BD008D2861 /* Y3QuizLightsOptionComponent.swift */; };
+		20A2DF782B14EFD5008D2861 /* Y3QuizLightsOptionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2DF772B14EFD5008D2861 /* Y3QuizLightsOptionRow.swift */; };
 		20A2DF992B151A0E008D2861 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 20A2DF982B151A0E008D2861 /* FirebaseAnalyticsSwift */; };
 		20A2DF9B2B151A0E008D2861 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 20A2DF9A2B151A0E008D2861 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		20A2DF9D2B151A0E008D2861 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 20A2DF9C2B151A0E008D2861 /* FirebaseAuth */; };
@@ -52,8 +47,11 @@
 		20C47E0A2B0E66A70074D61F /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C47E092B0E66A70074D61F /* ForgotPasswordView.swift */; };
 		20C47E0C2B0E69340074D61F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C47E0B2B0E69340074D61F /* ProfileView.swift */; };
 		20C47E0E2B0E71EC0074D61F /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20C47E0D2B0E71EC0074D61F /* SettingsRowView.swift */; };
+		20D627062B23B65300DE2C7F /* DynamicContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D627052B23B65300DE2C7F /* DynamicContentViewModel.swift */; };
+		20D627082B23CB6F00DE2C7F /* Y3QuizLightsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D627072B23CB6F00DE2C7F /* Y3QuizLightsOption.swift */; };
+		20D6270A2B23D2B500DE2C7F /* Y3QuizLightsMainQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D627092B23D2B500DE2C7F /* Y3QuizLightsMainQuestionView.swift */; };
+		20D6270C2B253F4300DE2C7F /* Y3QuizLightsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D6270B2B253F4300DE2C7F /* Y3QuizLightsViewModel.swift */; };
 		20E8FE6A2B11636A00149522 /* GifImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E8FE692B11636A00149522 /* GifImageView.swift */; };
-		20E8FE6C2B11656100149522 /* NaviCademy-Launch-Animation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 20E8FE6B2B11656100149522 /* NaviCademy-Launch-Animation.gif */; };
 		20E8FE6E2B1165FA00149522 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20E8FE6D2B1165FA00149522 /* Launch Screen.storyboard */; };
 		20ED58732B0E87F90048BF25 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED58722B0E87F90048BF25 /* User.swift */; };
 		20ED58752B0E92BD0048BF25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20ED58742B0E92BD0048BF25 /* GoogleService-Info.plist */; };
@@ -67,6 +65,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2047210A2B2387E900C1324B /* Y3QuizLightsQuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsQuestionsViewModel.swift; sourceTree = "<group>"; };
+		2047210C2B23956000C1324B /* Y3QuizLightsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsOptionsViewModel.swift; sourceTree = "<group>"; };
+		2047210E2B23A74F00C1324B /* Y3QuizLightsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsManager.swift; sourceTree = "<group>"; };
+		204721152B23B08D00C1324B /* Y3QuizLightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsModel.swift; sourceTree = "<group>"; };
 		204C4CFE2B0D519E0012AF4A /* NaviCademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaviCademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		204C4D012B0D519E0012AF4A /* NaviCademyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviCademyApp.swift; sourceTree = "<group>"; };
 		204C4D032B0D519E0012AF4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,27 +88,21 @@
 		209C40BA2B15343400A02158 /* Y3QuizLightsHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsHomeView.swift; sourceTree = "<group>"; };
 		209C40BC2B1535C000A02158 /* Y3QuizHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizHomeView.swift; sourceTree = "<group>"; };
 		209C40C32B16370900A02158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		209C40C62B163E4600A02158 /* countDocumentsInCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countDocumentsInCollection.swift; sourceTree = "<group>"; };
 		209C40C82B163F6900A02158 /* QuizHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHomeViewModel.swift; sourceTree = "<group>"; };
 		209C40CA2B16469800A02158 /* Y3QuizLightsLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsLevelViewModel.swift; sourceTree = "<group>"; };
-		209C40CC2B16728800A02158 /* DynamicContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentViewModel.swift; sourceTree = "<group>"; };
-		209C40CE2B16814000A02158 /* Y3QuizQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizQuestionsView.swift; sourceTree = "<group>"; };
-		209C40DD2B19107400A02158 /* QuizManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizManager.swift; sourceTree = "<group>"; };
-		209C40DF2B1910AA00A02158 /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
-		209C40E12B1910DB00A02158 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
-		209C40E32B1A2C5100A02158 /* QuizInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizInfo.swift; sourceTree = "<group>"; };
-		209C40E52B1A606800A02158 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		209C40E72B1A669900A02158 /* InsideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideView.swift; sourceTree = "<group>"; };
-		20A2DF752B14E0BD008D2861 /* QuizOptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizOptionComponent.swift; sourceTree = "<group>"; };
-		20A2DF772B14EFD5008D2861 /* QuizOptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizOptionRow.swift; sourceTree = "<group>"; };
-		20A2DF792B14F020008D2861 /* QuizOptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizOptionViewModel.swift; sourceTree = "<group>"; };
+		209C40CE2B16814000A02158 /* Y3QuizLightsQuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsQuestionsView.swift; sourceTree = "<group>"; };
+		20A2DF752B14E0BD008D2861 /* Y3QuizLightsOptionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsOptionComponent.swift; sourceTree = "<group>"; };
+		20A2DF772B14EFD5008D2861 /* Y3QuizLightsOptionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsOptionRow.swift; sourceTree = "<group>"; };
 		20C47E072B0E62250074D61F /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		20C47E092B0E66A70074D61F /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		20C47E0B2B0E69340074D61F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		20C47E0D2B0E71EC0074D61F /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		20D627052B23B65300DE2C7F /* DynamicContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicContentViewModel.swift; sourceTree = "<group>"; };
+		20D627072B23CB6F00DE2C7F /* Y3QuizLightsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsOption.swift; sourceTree = "<group>"; };
+		20D627092B23D2B500DE2C7F /* Y3QuizLightsMainQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsMainQuestionView.swift; sourceTree = "<group>"; };
+		20D6270B2B253F4300DE2C7F /* Y3QuizLightsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Y3QuizLightsViewModel.swift; sourceTree = "<group>"; };
 		20E0A6942B0FE1CA00096ABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		20E8FE692B11636A00149522 /* GifImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifImageView.swift; sourceTree = "<group>"; };
-		20E8FE6B2B11656100149522 /* NaviCademy-Launch-Animation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "NaviCademy-Launch-Animation.gif"; path = "../../../../Images/GIF Animation/NaviCademy-Launch-Animation.gif"; sourceTree = "<group>"; };
 		20E8FE6D2B1165FA00149522 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		20ED58722B0E87F90048BF25 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		20ED58742B0E92BD0048BF25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -139,6 +135,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204721072B23688300C1324B /* Y3QuizLights */ = {
+			isa = PBXGroup;
+			children = (
+				209C40B82B152DA900A02158 /* Y3QuizLightsLevelView.swift */,
+				209C40BA2B15343400A02158 /* Y3QuizLightsHomeView.swift */,
+				209C40CE2B16814000A02158 /* Y3QuizLightsQuestionsView.swift */,
+				20D627092B23D2B500DE2C7F /* Y3QuizLightsMainQuestionView.swift */,
+			);
+			path = Y3QuizLights;
+			sourceTree = "<group>";
+		};
+		204721082B2382E700C1324B /* Y3 */ = {
+			isa = PBXGroup;
+			children = (
+				204721092B2382F900C1324B /* Lights */,
+			);
+			path = Y3;
+			sourceTree = "<group>";
+		};
+		204721092B2382F900C1324B /* Lights */ = {
+			isa = PBXGroup;
+			children = (
+				20A2DF752B14E0BD008D2861 /* Y3QuizLightsOptionComponent.swift */,
+				20A2DF772B14EFD5008D2861 /* Y3QuizLightsOptionRow.swift */,
+			);
+			path = Lights;
+			sourceTree = "<group>";
+		};
+		204721102B23A75D00C1324B /* Y3 */ = {
+			isa = PBXGroup;
+			children = (
+				204721112B23A76900C1324B /* Lights */,
+			);
+			path = Y3;
+			sourceTree = "<group>";
+		};
+		204721112B23A76900C1324B /* Lights */ = {
+			isa = PBXGroup;
+			children = (
+				2047210E2B23A74F00C1324B /* Y3QuizLightsManager.swift */,
+			);
+			path = Lights;
+			sourceTree = "<group>";
+		};
+		204721122B23B04300C1324B /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				204721132B23B05300C1324B /* Y3 */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		204721132B23B05300C1324B /* Y3 */ = {
+			isa = PBXGroup;
+			children = (
+				204721142B23B05C00C1324B /* Lights */,
+			);
+			path = Y3;
+			sourceTree = "<group>";
+		};
+		204721142B23B05C00C1324B /* Lights */ = {
+			isa = PBXGroup;
+			children = (
+				204721152B23B08D00C1324B /* Y3QuizLightsModel.swift */,
+				20D627072B23CB6F00DE2C7F /* Y3QuizLightsOption.swift */,
+			);
+			path = Lights;
+			sourceTree = "<group>";
+		};
 		204C4CF52B0D519E0012AF4A = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				209C40C52B163E1500A02158 /* Services */,
-				209C40C22B1636E700A02158 /* Delegate */,
+				209C40C22B1636E700A02158 /* Delegates */,
 				20E0A6942B0FE1CA00096ABF /* Info.plist */,
 				204C4D0F2B0D51D60012AF4A /* App */,
 				204C4D102B0D51F70012AF4A /* Components */,
@@ -167,7 +232,6 @@
 				204C4D122B0D52170012AF4A /* Model */,
 				204C4D052B0D519F0012AF4A /* Assets.xcassets */,
 				20ED58742B0E92BD0048BF25 /* GoogleService-Info.plist */,
-				20E8FE6B2B11656100149522 /* NaviCademy-Launch-Animation.gif */,
 				204C4D072B0D519F0012AF4A /* Preview Content */,
 			);
 			path = NaviCademy;
@@ -195,12 +259,12 @@
 			children = (
 				20A2DF742B14E089008D2861 /* Learn */,
 				20A2DF732B14E07F008D2861 /* Quiz */,
-				204C4D1A2B0D56670012AF4A /* InputView.swift */,
 				20C47E0D2B0E71EC0074D61F /* SettingsRowView.swift */,
-				20E8FE692B11636A00149522 /* GifImageView.swift */,
 				205C16562B138885004FFE27 /* CustomButtonView.swift */,
 				205C16582B1388EC004FFE27 /* CustomLabel.swift */,
+				20E8FE692B11636A00149522 /* GifImageView.swift */,
 				209C40B42B1521A700A02158 /* hvAlignmentView.swift */,
+				204C4D1A2B0D56670012AF4A /* InputView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -208,11 +272,11 @@
 		204C4D112B0D520C0012AF4A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				204C4D142B0D52630012AF4A /* Authentication */,
 				209C40DC2B19105700A02158 /* Managers */,
 				205C16682B13E799004FFE27 /* Learn */,
 				20E8FE5E2B11068400149522 /* Quiz */,
 				204C4D152B0D52720012AF4A /* Profile */,
-				204C4D142B0D52630012AF4A /* Authentication */,
 				204C4D132B0D52440012AF4A /* Root */,
 			);
 			path = Core;
@@ -221,6 +285,7 @@
 		204C4D122B0D52170012AF4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				204721122B23B04300C1324B /* Quiz */,
 				20ED58722B0E87F90048BF25 /* User.swift */,
 			);
 			path = Model;
@@ -278,18 +343,17 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		209C40C22B1636E700A02158 /* Delegate */ = {
+		209C40C22B1636E700A02158 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
 				209C40C32B16370900A02158 /* AppDelegate.swift */,
 			);
-			path = Delegate;
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		209C40C52B163E1500A02158 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				209C40C62B163E4600A02158 /* countDocumentsInCollection.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -297,10 +361,8 @@
 		209C40D22B190A3700A02158 /* Y3 */ = {
 			isa = PBXGroup;
 			children = (
-				209C40B82B152DA900A02158 /* Y3QuizLightsLevelView.swift */,
-				209C40BA2B15343400A02158 /* Y3QuizLightsHomeView.swift */,
+				204721072B23688300C1324B /* Y3QuizLights */,
 				209C40BC2B1535C000A02158 /* Y3QuizHomeView.swift */,
-				209C40CE2B16814000A02158 /* Y3QuizQuestionsView.swift */,
 			);
 			path = Y3;
 			sourceTree = "<group>";
@@ -337,7 +399,7 @@
 		209C40D72B190AC700A02158 /* Y3 */ = {
 			isa = PBXGroup;
 			children = (
-				209C40CA2B16469800A02158 /* Y3QuizLightsLevelViewModel.swift */,
+				20D6270D2B253F5000DE2C7F /* Lights */,
 			);
 			path = Y3;
 			sourceTree = "<group>";
@@ -373,8 +435,7 @@
 		209C40DC2B19105700A02158 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				209C40DD2B19107400A02158 /* QuizManager.swift */,
-				209C40E52B1A606800A02158 /* SessionManager.swift */,
+				204721102B23A75D00C1324B /* Y3 */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -382,8 +443,7 @@
 		20A2DF732B14E07F008D2861 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				20A2DF752B14E0BD008D2861 /* QuizOptionComponent.swift */,
-				20A2DF772B14EFD5008D2861 /* QuizOptionRow.swift */,
+				204721082B2382E700C1324B /* Y3 */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -395,12 +455,22 @@
 			path = Learn;
 			sourceTree = "<group>";
 		};
+		20D6270D2B253F5000DE2C7F /* Lights */ = {
+			isa = PBXGroup;
+			children = (
+				209C40CA2B16469800A02158 /* Y3QuizLightsLevelViewModel.swift */,
+				2047210A2B2387E900C1324B /* Y3QuizLightsQuestionsViewModel.swift */,
+				20D6270B2B253F4300DE2C7F /* Y3QuizLightsViewModel.swift */,
+				2047210C2B23956000C1324B /* Y3QuizLightsOptionsViewModel.swift */,
+			);
+			path = Lights;
+			sourceTree = "<group>";
+		};
 		20E8FE5E2B11068400149522 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
 				20E8FE602B1106AC00149522 /* View */,
 				20E8FE5F2B1106A000149522 /* ViewModel */,
-				209C40E72B1A669900A02158 /* InsideView.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -413,12 +483,8 @@
 				209C40D92B190AEE00A02158 /* Duelighed */,
 				209C40D82B190AD400A02158 /* Speedboat */,
 				209C40D72B190AC700A02158 /* Y3 */,
-				20A2DF792B14F020008D2861 /* QuizOptionViewModel.swift */,
 				209C40C82B163F6900A02158 /* QuizHomeViewModel.swift */,
-				209C40CC2B16728800A02158 /* DynamicContentViewModel.swift */,
-				209C40DF2B1910AA00A02158 /* QuizQuestion.swift */,
-				209C40E32B1A2C5100A02158 /* QuizInfo.swift */,
-				209C40E12B1910DB00A02158 /* QuizViewModel.swift */,
+				20D627052B23B65300DE2C7F /* DynamicContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -534,7 +600,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				204C4D092B0D519F0012AF4A /* Preview Assets.xcassets in Resources */,
-				20E8FE6C2B11656100149522 /* NaviCademy-Launch-Animation.gif in Resources */,
 				204C4D062B0D519F0012AF4A /* Assets.xcassets in Resources */,
 				20E8FE6E2B1165FA00149522 /* Launch Screen.storyboard in Resources */,
 				20ED58752B0E92BD0048BF25 /* GoogleService-Info.plist in Resources */,
@@ -548,43 +613,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20A2DF782B14EFD5008D2861 /* QuizOptionRow.swift in Sources */,
+				20A2DF782B14EFD5008D2861 /* Y3QuizLightsOptionRow.swift in Sources */,
 				205C16672B13CAD0004FFE27 /* LearnHomeView.swift in Sources */,
-				209C40E62B1A606800A02158 /* SessionManager.swift in Sources */,
 				20ED58BA2B0E97580048BF25 /* AuthViewModel.swift in Sources */,
-				209C40E42B1A2C5100A02158 /* QuizInfo.swift in Sources */,
+				204721162B23B08E00C1324B /* Y3QuizLightsModel.swift in Sources */,
 				205C16592B1388ED004FFE27 /* CustomLabel.swift in Sources */,
 				209C40CB2B16469800A02158 /* Y3QuizLightsLevelViewModel.swift in Sources */,
 				205C16572B138885004FFE27 /* CustomButtonView.swift in Sources */,
-				209C40E02B1910AA00A02158 /* QuizQuestion.swift in Sources */,
-				20A2DF7A2B14F020008D2861 /* QuizOptionViewModel.swift in Sources */,
+				2047210F2B23A74F00C1324B /* Y3QuizLightsManager.swift in Sources */,
 				209C40B92B152DA900A02158 /* Y3QuizLightsLevelView.swift in Sources */,
-				209C40E82B1A669900A02158 /* InsideView.swift in Sources */,
 				209C40B52B1521A700A02158 /* hvAlignmentView.swift in Sources */,
+				20D6270C2B253F4300DE2C7F /* Y3QuizLightsViewModel.swift in Sources */,
 				209C40C42B16370900A02158 /* AppDelegate.swift in Sources */,
 				209C40BB2B15343400A02158 /* Y3QuizLightsHomeView.swift in Sources */,
 				204C4D1B2B0D56670012AF4A /* InputView.swift in Sources */,
 				205C16612B13C7DC004FFE27 /* HomeView.swift in Sources */,
 				204C4D172B0D52C80012AF4A /* LoginView.swift in Sources */,
 				205C16652B13CAC6004FFE27 /* MoreView.swift in Sources */,
-				209C40C72B163E4600A02158 /* countDocumentsInCollection.swift in Sources */,
-				209C40DE2B19107400A02158 /* QuizManager.swift in Sources */,
 				209C40BD2B1535C000A02158 /* Y3QuizHomeView.swift in Sources */,
 				204C4D042B0D519E0012AF4A /* ContentView.swift in Sources */,
+				20D6270A2B23D2B500DE2C7F /* Y3QuizLightsMainQuestionView.swift in Sources */,
 				204C4D022B0D519E0012AF4A /* NaviCademyApp.swift in Sources */,
+				2047210B2B2387E900C1324B /* Y3QuizLightsQuestionsViewModel.swift in Sources */,
 				20C47E0E2B0E71EC0074D61F /* SettingsRowView.swift in Sources */,
-				209C40CD2B16728800A02158 /* DynamicContentViewModel.swift in Sources */,
 				20ED58732B0E87F90048BF25 /* User.swift in Sources */,
 				209C40C92B163F6900A02158 /* QuizHomeViewModel.swift in Sources */,
+				20D627062B23B65300DE2C7F /* DynamicContentViewModel.swift in Sources */,
+				2047210D2B23956000C1324B /* Y3QuizLightsOptionsViewModel.swift in Sources */,
 				20C47E0A2B0E66A70074D61F /* ForgotPasswordView.swift in Sources */,
-				209C40CF2B16814000A02158 /* Y3QuizQuestionsView.swift in Sources */,
+				209C40CF2B16814000A02158 /* Y3QuizLightsQuestionsView.swift in Sources */,
 				20E8FE6A2B11636A00149522 /* GifImageView.swift in Sources */,
 				20C47E0C2B0E69340074D61F /* ProfileView.swift in Sources */,
 				205C16632B13CABB004FFE27 /* MainView.swift in Sources */,
 				20C47E082B0E62250074D61F /* RegistrationView.swift in Sources */,
-				209C40E22B1910DB00A02158 /* QuizViewModel.swift in Sources */,
 				205C165F2B13C79F004FFE27 /* QuizHomeView.swift in Sources */,
-				20A2DF762B14E0BD008D2861 /* QuizOptionComponent.swift in Sources */,
+				20D627082B23CB6F00DE2C7F /* Y3QuizLightsOption.swift in Sources */,
+				20A2DF762B14E0BD008D2861 /* Y3QuizLightsOptionComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

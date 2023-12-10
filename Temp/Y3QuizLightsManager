@@ -1,0 +1,56 @@
+import Foundation
+import Firebase
+
+class Y3QuizLightsManager {
+
+    func loadQuestions(quizLevel: String) {
+        let db = Firestore.firestore()
+        let questionRef = db.collection("i18n").document("dk").collection("question")
+        let rank = String(rankType.prefix(2))
+        let type = String(rankType.dropFirst(2))
+        
+        // Create a query to filter by rank
+        let query = questionRef.whereField("rank", arrayContains: rank)
+
+        query.getDocuments { (snapshot, error) in
+            if let error = error {
+                print("Error getting question info: \(error)")
+                completion?()
+            } else {
+                print("Snapshot documents count: \(snapshot?.documents.count ?? 0)")
+
+                // Filter the result by type
+
+                // Filter the result by level
+
+                print("Filtered documents count: \(filteredByLevel.count)")
+
+                let shuffledQuestions = filteredByLevel.shuffled()  // Shuffle the filtered questions
+                let selectedQuestions = Array(shuffledQuestions.prefix(3))  // Select the first 3 questions
+
+                for document in selectedQuestions {
+                    group.enter()
+                    let data = document.data()
+                    
+                    // Extract question information
+                    let correctAnswers = data["answers"] as? [String] ?? []
+                    let rankType = "\(data["rank"] as? String ?? "")\(data["type"] as? String ?? "")"
+                    let questionText = data["question"] as? String ?? ""
+                    let imageText = data["image"] as? String ?? ""
+
+                    // Create a question using the extracted information
+
+                    // Add the question to the questions array
+                    
+                    group.leave()
+                }
+
+                group.notify(queue: .main) {
+                    // Call completion handler when all questions are loaded
+                    completion?()
+                    self.objectWillChange.send()
+                }
+            }
+        }
+    }
+}

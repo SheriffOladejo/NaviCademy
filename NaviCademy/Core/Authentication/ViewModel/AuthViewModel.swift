@@ -16,7 +16,7 @@ protocol AuthenticationFormProtocol {
 
 @MainActor
 class AuthViewModel: ObservableObject {
-    private(set) var context = LAContext()
+    @Published private(set) var context = LAContext()
     @Published private(set) var biometryType: LABiometryType = .none
     private(set) var canEvaluetePolicy = false
     @Published private(set) var isAuthenticated = false
@@ -24,7 +24,6 @@ class AuthViewModel: ObservableObject {
     @Published private(set) var errorDescription: String?
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
-    
     init() {
         getBiometryType()
         self.userSession = Auth.auth().currentUser

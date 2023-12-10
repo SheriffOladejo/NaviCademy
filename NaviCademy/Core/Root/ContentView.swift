@@ -8,27 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     @State private var showAlert: Bool = false
 
     var body: some View {
-        
         Group {
-            if viewModel.userSession != nil {
-//                LoginView()
+            if authViewModel.userSession != nil {
+                // If a user is signed in
                 HomeView()
             } else {
                 LoginView()
                     .alert(isPresented: $showAlert) {
                         Alert(
                             title: Text("Error"),
-                            message: Text(viewModel.errorDescription ?? "Error trying to log in, please try again"),
+                            message: Text(authViewModel.errorDescription ?? "Error trying to log in, please try again"),
                             dismissButton: .default(Text("OK"))
-                    )
-                }
+                        )
+                    }
             }
         }
-        .onReceive(viewModel.$showAlert) { newShowAlertValue in
+        .onReceive(authViewModel.$showAlert) { newShowAlertValue in
             showAlert = newShowAlertValue
         }
     }
